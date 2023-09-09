@@ -148,6 +148,9 @@ clean:
 
 `examples` 下 lists 就是源文件 lists.c 的可执行文件
 
-`src` 下 `libds.so` 就是动态库, 但是目前 `ldd` 命令却发现 `lists` 没有链接至 `libds.so`
+`src` 下 `libds.so` 就是动态库
+
+![ldd](./image/swappy-20230909-235117.png)
+可见已经成功动态链接到我们的可执行文件中去了
 
 到目前为止， 项目已经配置完了
