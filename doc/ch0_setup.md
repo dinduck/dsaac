@@ -141,9 +141,13 @@ clean:
 
 接下来使用 `make` 构建我们的项目, `make clean` 用于清除构建
 
+`VSCode` CMake 菜单默认在左下角, 可以直接点击生成来构建
+
 在 `build` 下会生成很多文件
 ![build](./image/swappy-20230909-233030.png) 
 
 `examples` 下 lists 就是源文件 lists.c 的可执行文件
 
+`src` 下 `libds.so` 就是动态库, 但是目前 `ldd` 命令却发现 `lists` 没有链接至 `libds.so`
 
+到目前为止， 项目已经配置完了
