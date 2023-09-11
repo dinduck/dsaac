@@ -69,13 +69,10 @@ void Insert(ElementType X, List L, Position P) {
   P->Next = TmpCell;
 }
 
-void DeleteList(List L) {
-  Position P, Tmp;
-  P = L->Next;
-  L->Next = NULL;
-  while (P) {
-    Tmp = P->Next;
-    free(P);
-    P = Tmp;
+List DeleteList(List L) {
+  if (L != NULL) {
+    DeleteList(L->Next);
+    free(L);
   }
+  return NULL;
 }

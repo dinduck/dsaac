@@ -10,3 +10,5 @@ add_subdirectory(src)
 # 导入 examples
 add_subdirectory(examples)
 
+# 导入测试
+add_subdirectory(tests)

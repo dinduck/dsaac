@@ -13,4 +13,17 @@ add_library(stackl STATIC stackl.c)
 # 栈 By 数组
 add_library(stacka STATIC stacka.c)
 
+# 队列
+add_library(queue STATIC queue.c)
 
+# 树
+add_library(tree STATIC tree.c)
+
+# 二叉树
+add_library(binarytree STATIC binarytree.c)
+
+# 二叉搜索树
+add_library(adtree STATIC adtree.c)
+
+# 二叉平衡树
+add_library(avltree STATIC avltree.c)

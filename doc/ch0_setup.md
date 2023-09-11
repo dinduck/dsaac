@@ -2,9 +2,12 @@
 
 ## 软件安装
 
-......
-
-
+### Arch
+```Bash
+sudo pacman -S base-devel clang
+```
+- `base-devel`  基本的构建环境
+- `clang` llvm 的c语言
 ## 基本文件夹
 
 ```Bash
@@ -114,6 +117,9 @@ int main() {
 如果你是VSCode用户， 或者支持CMake的IDE, 可以跳过 `Makefile` 配置
 
 新建一个 `Makefile`, 方便一键编译, 这里还是调用 `cmake`，构建模式为 `Debug`, 使用 `clang` 编译c语言，`clang++` 编译cpp， 指定源文件, 指定构建目录, 指定编译工具为 `Ninja`, 你也可以选择 `Make` 作为编译工具, 首先会init初始化，最后链接生成文件
+
+- 更改 `-DCMAKE_C_COMPILER:FILEPATH=/usr/bin/clang` `-DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++` 可选择其他的编译器, 例如 `gcc` `g++`
+
 
 这里命令抄录 `VSCode`
 
