@@ -1,7 +1,16 @@
-# 添加库
-add_library(ds SHARED 
+include_directories(${DSAAC_SOURCE_DIR}/include)
+
+# 链表库
+add_library(list STATIC
   list.c)
 
-# 头文件目录 DSAAC 我们项目的主名称是 dsaac 这里大写 表示 dsaac 项目源文件路径
-target_include_directories(ds PUBLIC ${DSAAC_SOURCE_DIR}/include)
+# 游标链表
+add_library(cursor STATIC cursor.c)
+
+# 栈 By 链表 
+add_library(stackl STATIC stackl.c)
+
+# 栈 By 数组
+add_library(stacka STATIC stacka.c)
+
 
