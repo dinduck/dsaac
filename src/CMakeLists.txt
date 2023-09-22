@@ -27,3 +27,6 @@ add_library(adtree STATIC adtree.c)
 
 # 二叉平衡树
 add_library(avltree STATIC avltree.c)
+
+# 分离链接散列
+add_library(hashsep STATIC hashtable.c)
